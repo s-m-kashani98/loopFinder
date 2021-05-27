@@ -1,9 +1,8 @@
 
 loop= []
 def addToLoop(x):
-    for i in loop:
-        if i == x:
-            return True    
+    if loop[0] == x:
+        return True    
     loop.append(x)
     return False
 def makeStep(a,pos):
